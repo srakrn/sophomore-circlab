@@ -1,0 +1,72 @@
+\documentclass{exam}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{xltxtra} 
+\XeTeXlinebreaklocale "th_TH"
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Umpush}
+\setmonofont{Tlwg Typist}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	basicstyle = \ttfamily,
+	numbers=left, 
+	numberstyle=\small, 
+	numbersep=8pt, 
+	frame=single, 
+	breaklines=true,
+	language=sql,
+	keywordstyle=\color{blue},
+  	stringstyle=\color{mauve},
+  	xleftmargin=15pt,
+}
+
+\title{Readme for Logic Circuit Lab. 9}
+\author{ศิระกร ลำใย (5910500023) | นิธิกานต์ ศุภพรโกมล (5910505378)}
+
+\usepackage{amssymb}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+
+\setlength{\parindent}{0cm} % Default is 15pt.
+
+\usepackage{scrextend}
+
+\printanswers
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\question  ให้ทําการแกะสายอินพุทออกหนึ่งตัวแล้วทําการทดลองดูใหม่แล้วดูว่า“การปล่อยขาลอย” มีคุณสมบัติอย่างไร ตอบคําถามนี้ใน README.pdf
+
+\begin{solution}[.2in]
+หากต่อไฟถูกต้อง การปล่อยขาลอย\textbf{จะให้ผลเทียบเท่ากับอินพุธ 1}
+\end{solution}
+
+\question ให้นิสิตนับจํานวนสายไฟว่าใช้ทั้งหมดกี่เส้น (รวม VCC, GND และอินพุทจาก LOGIC SWITCH) ตอบคําถามลงใน README.pdf
+
+\begin{solution}[.2in]
+ใช้สายทั้งหมด 21 เส้น
+\end{solution}
+
+\question ินิสิตจะต้องใช้ชิป 74LS02, 74LS08 และ 74LS32 ทั้งหมดอย่างละกี่ตัว และมีเกทที่ไม่ได้ใช้งานทั้งหมดกี่ตัว ตอบคําถามลงใน README.pdf
+
+\begin{solution}[.2in]
+ใช้
+\begin{itemize}
+\item 74LS02 (NOR Gate) ทั้งหมด 1 ตัว ใช้เกททั้งหมดโดยไม่เหลือ
+\item 74LS08 (AND Gate) ทั้งหมด 2 ตัว เหลือ 2 เกท
+\item 74LS32 (OR Gate) ทั้งหมด 1 ตัว เหลือ 1 เกท
+\end{itemize}
+\end{solution}
+
+\end{questions}
+
+\end{document}

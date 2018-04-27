@@ -1,0 +1,65 @@
+$date
+	Wed Apr 25 08:48:10 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module addsub_tb $end
+$var wire 32 ! result [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 32 # b [31:0] $end
+$var reg 1 $ control $end
+$scope module as1 $end
+$var wire 32 % a [31:0] $end
+$var wire 32 & b [31:0] $end
+$var wire 1 $ control $end
+$var wire 32 ' result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+x$
+bx #
+bx "
+bx !
+$end
+#1
+b1011 !
+b1011 '
+b111 #
+b111 &
+b100 "
+b100 %
+1$
+#2
+b11111111111111111111111111111101 !
+b11111111111111111111111111111101 '
+b1000 #
+b1000 &
+b101 "
+b101 %
+0$
+#3
+b111110 !
+b111110 '
+b100101 #
+b100101 &
+b11001 "
+b11001 %
+1$
+#4
+b11 !
+b11 '
+b101 #
+b101 &
+b1000 "
+b1000 %
+0$
+#6

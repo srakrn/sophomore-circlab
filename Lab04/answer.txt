@@ -1,0 +1,39 @@
+# Answers to questions
+
+1) Cout will be `1` when there is an unsigned overflow.
+2) 2048 tests are needed. (2^8*2^3 = 2^11) 
+3) The following answers are the test results:
+	1)
+		- A<B:	0x0, 0
+		- A+B:	0x80000000, 1
+	2)
+		- A<B:	0x1, 0
+		- A-B:	0x7fffffff, 1
+	3)
+		- A<B:	0x1, 0
+		- A-B:	0x7fffffff, 1
+		- A+B:	0xffffffff, 1
+	4)
+		- A<B:	0x0, 0
+		- A-B:	0x00000001, 1
+		- A+B:	0x80000000, 0
+	5)
+		- A<B:	0x1, 0
+		- A-B:	0x7fffffff, 0
+		- A+B:	0x7fffffff, 1
+	6)
+		- SLL:	0x0
+		- SRL:	0x0
+		- SRA:	0x0
+	7)
+		- SLL:	0x0
+		- SRL:	0x0
+		- SRA:	0x0
+	8)
+		- SLL:	0xffffffff
+		- SRL:	0xffffffff
+		- SRA:	0xffffffff
+	9)
+		- SLL:	0x80000000
+		- SRL:	0x00000001
+		- SRA:	0xffffffff
